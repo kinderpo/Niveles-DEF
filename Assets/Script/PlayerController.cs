@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
 
+        animator.SetFloat("VelX", hor);
+        animator.SetFloat("VelY", ver);
+
 
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? speed * runMultiplier : speed;
 
