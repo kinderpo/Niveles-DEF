@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
             rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
 
+            animator.Play("Jump");
+
         }
     }
 
